@@ -3,5 +3,9 @@
   "version": "0.1.0",
   "homepage": "lovetriangles.eth",
   "entry point": "index.js",
-  "license": "ISCs"
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1",
+    "hardhat": "^2.6.1"
+  }
 }
