@@ -1,0 +1,7 @@
+{
+  "name": "love-triangles",
+  "version": "0.1.0",
+  "homepage": "lovetriangles.eth",
+  "entry point": "index.js",
+  "license": "ISCs"
+}
