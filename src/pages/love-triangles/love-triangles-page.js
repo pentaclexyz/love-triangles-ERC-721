@@ -8,6 +8,8 @@ export const LoveTrianglesPage = () => {
         <>
             <Header/>
             <Layout>
+                <p>some text or something poetic about meaning ...</p>
+                <p>Then medium sized thumbs of the 81 love-triangles, which can then initially click to own page I guess if easiest? Or open modal thing with details</p>
                 <LoveTrianglesFunction/>
             </Layout>
         </>
