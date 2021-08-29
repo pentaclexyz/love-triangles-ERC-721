@@ -5,8 +5,7 @@ class Footer extends Component {
     render() {
         return <footer className={"p-footer"}>
             <article className={"footer-content flex-group space-between flex-align-center"}>
-                <div>© {new Date().getFullYear()} Pentacle
-                    <a href={"https://github.com/pentacledotai"} target={"_blank"} rel="noopener noreferrer">GitHub</a>
+                <div>© {new Date().getFullYear()} Love Triangles
                     <Link to="/about">About</Link>
                     <Link to="/terms">Terms</Link>
                     <a href={"https://twitter.com/pentaclexyz"} target={"_blank"} rel="noopener noreferrer">Twitter</a>
