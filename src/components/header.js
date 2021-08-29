@@ -6,7 +6,7 @@ class Header extends Component {
         return <header className={"p-header"}>
             <div className="header-content flex justify-space-between">
                 <div className={"flex-1"}><Link className={"logo"} to="/">Love Triangles</Link></div>
-                <div className={"flex-2"}>some blurb</div>
+                <div className={"flex-2"}>Some tagline thing</div>
             </div>
         </header>
     }
