@@ -15,7 +15,7 @@ function LoveTrianglesFunction() {
             );
             p5.angleMode(p5.DEGREES);
 
-            // this is the gradient for stroke that doesn't work - prob removed too much code but :shrug:
+            // this is the gradient for stroke that doesn't work - think it needs a setGradient somewhere but nvm
             //
             // let c1 = p5.color(235,235,235,100);
             // let c2 = p5.color(235,235,235,50);
