@@ -97,8 +97,6 @@ function LoveTrianglesFunction() {
             // p5.stroke(122,173,174);
             // p5.stroke(115,98,107);
             // p5.stroke(111,97,59);
-            // p5.stroke(189,165,64);
-            // p5.stroke(138,175,205);
         }
 
         p5.draw = () => {
