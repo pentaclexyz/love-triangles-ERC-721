@@ -105,7 +105,7 @@ function LoveTrianglesFunction() {
 
         p5.draw = () => {
 
-            p5.background(2,13,28);
+            p5.background(5,18,27);
 
             let branch = (len) => {
                 if (len > 1.5) {
