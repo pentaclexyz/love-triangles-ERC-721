@@ -14,12 +14,19 @@ function LoveTrianglesFunction() {
                 canvasParentRef
             );
             p5.angleMode(p5.DEGREES);
+
+            // this is the gradient for stroke that doesn't work - prob removed too much code but :shrug:
+            //
+            // let c1 = p5.color(235,235,235,100);
+            // let c2 = p5.color(235,235,235,50);
+            //
+            // let c = p5.lerpColor(c1, c2, .5);
+            // p5.stroke(c);
+
             // p5.stroke(251, 192, 224, 100);
             // p5.stroke(59,39,120, 100);
             // p5.stroke(50,220,169, 100);
-
-            // laputa colours below
-            // p5.stroke(114,53,77);
+            p5.stroke(114,53,77);
             // p5.stroke(129,87,93);
             // p5.stroke(83,101,108, 100);
             // p5.stroke(208,64,79, 100);
@@ -38,7 +45,7 @@ function LoveTrianglesFunction() {
             // p5.stroke(254,247,142);
             // p5.stroke(236,187,86);
             // p5.stroke(152,107,106);
-            p5.stroke(187,149,155);
+            // p5.stroke(187,149,155);
             // p5.stroke(191,143,162);
             // p5.stroke(208,214,174);
             // p5.stroke(184,192,133);
@@ -81,7 +88,7 @@ function LoveTrianglesFunction() {
 
         p5.draw = () => {
 
-            p5.background(0, 120);
+            p5.background(13,20,26);
 
             let branch = (len) => {
                 if (len > 1.5) {
