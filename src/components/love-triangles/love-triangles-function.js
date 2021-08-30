@@ -30,7 +30,7 @@ function LoveTrianglesFunction() {
             // p5.stroke(152,91,128);
             // p5.stroke(152,91,128);
             // p5.stroke(231,202,166);
-            p5.stroke(190,135,77);
+            // p5.stroke(190,135,77);
             // p5.stroke(242,224,176);
             // p5.stroke(228,198,143);
             // p5.stroke(114,53,77);
@@ -38,7 +38,7 @@ function LoveTrianglesFunction() {
             // p5.stroke(254,247,142);
             // p5.stroke(236,187,86);
             // p5.stroke(152,107,106);
-            // p5.stroke(187,149,155);
+            p5.stroke(187,149,155);
             // p5.stroke(191,143,162);
             // p5.stroke(208,214,174);
             // p5.stroke(184,192,133);
