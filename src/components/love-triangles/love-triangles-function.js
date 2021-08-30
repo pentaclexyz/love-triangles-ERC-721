@@ -84,11 +84,26 @@ function LoveTrianglesFunction() {
             // p5.stroke(29,31,46);
             // p5.stroke(70,70,79);
             // p5.stroke(163,164,165);
+            // p5.stroke(91,96,55);
+            // p5.stroke(119,116,121,);
+            // p5.stroke(152,186,184);
+            // p5.stroke(205,209,172);
+            // p5.stroke(50,62,76);
+            // p5.stroke(145,143,170);
+            // p5.stroke(246,209,95);
+            // p5.stroke(160,177,170);
+            // p5.stroke(208,78,76);
+            // p5.stroke(228,160,125);
+            // p5.stroke(122,173,174);
+            // p5.stroke(115,98,107);
+            // p5.stroke(111,97,59);
+            // p5.stroke(189,165,64);
+            // p5.stroke(138,175,205);
         }
 
         p5.draw = () => {
 
-            p5.background(13,20,26);
+            p5.background(2,13,28);
 
             let branch = (len) => {
                 if (len > 1.5) {
