@@ -1,0 +1,13 @@
+.react-responsive-modal-modal {
+    background: unset;
+}
+
+.react-responsive-modal-closeButton {
+    color: white;    
+
+    svg,
+    path {
+        fill: currentColor;
+        stroke: currentColor;
+    }
+}

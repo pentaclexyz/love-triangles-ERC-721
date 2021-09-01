@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-responsive-modal/styles.css';
 import './assets/styles/pentacle.scss';
 import {BrowserRouter} from "react-router-dom";
 
