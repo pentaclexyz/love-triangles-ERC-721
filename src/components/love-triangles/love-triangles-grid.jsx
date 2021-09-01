@@ -47,14 +47,16 @@ export default function LoveTrianglesGrid({ children }) {
   })
   return (
     <ThemeProvider size={size}>
-      <ul className="tg-list">
-        <li className="tg-list-item flex-center">
-          <span style={{marginRight: '1rem'}}>large</span>
-          <input id="size-btn" className="tgl tgl-light" type="checkbox" onChange={() => setSize(size === 'small' ? 'large' : 'small')}/>
-          <label htmlFor="size-btn" className="tgl-btn"></label>
-          <span style={{marginLeft: '1rem'}}>smol</span>
-        </li>
-      </ul>
+      <div style={{display: 'flex'}} className={'justify-end'}>
+        <div className="switch-button" content="large" >
+          <input className="switch-button-checkbox" type="checkbox" onChange={() => setSize(size === 'small' ? 'large' : 'small')}/>
+          <label className="switch-button-label">
+          <span className="switch-button-label-span">smol</span>
+          </label>
+        </div>
+      </div>
+
+      <br />
       <MuuriComponent>
         {children}
       </MuuriComponent>
