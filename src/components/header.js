@@ -3,10 +3,8 @@ import {Link} from "react-router-dom";
 
 class Header extends Component {
     render() {
-        return <header className={"p-header"}>
-            <div className="header-content flex flex-center">
-                <Link className={"logo"} to="/"><h1>Love Triangles</h1></Link>
-            </div>
+        return <header className={"p-header align-center"}>
+                <Link className={"logo"} to="/"><h1>Love triangles</h1></Link>
         </header>
     }
 }
