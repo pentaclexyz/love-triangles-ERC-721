@@ -4,9 +4,8 @@ import {Link} from "react-router-dom";
 class Header extends Component {
     render() {
         return <header className={"p-header"}>
-            <div className="header-content flex justify-space-between">
-                <div className={"flex-1"}><Link className={"logo"} to="/">Love Triangles</Link></div>
-                <div className={"flex-2"}>Some tagline thing</div>
+            <div className="header-content flex flex-center">
+                <Link className={"logo"} to="/"><h1>Love Triangles</h1></Link>
             </div>
         </header>
     }

@@ -1,5 +1,5 @@
 h1, h2, h3, h4 {
-  color: _color(heading-1);
+  color: _color(secondary);
   margin: 0;
   padding: 0;
   font-weight: unset;
@@ -16,11 +16,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: _font(family-heavy);
+  font-family: _font(family-default);
   font-size: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  letter-spacing: -0.05rem;
+
 }
 
 h2 {
@@ -101,9 +101,9 @@ p + p {
 
 @media screen and (min-width: _breakpoint(step-one)) {
   h1 {
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    font-size: 3rem;
+    //padding-top: 1rem;
+    //padding-bottom: 1rem;
   }
 
   h2 {
