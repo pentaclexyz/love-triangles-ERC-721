@@ -14,6 +14,7 @@ function LoveTrianglesFunction() {
                 canvasParentRef
             );
             p5.angleMode(p5.DEGREES);
+            p5.bg = p5.loadImage('triangle-bg.png');
 
             // this is the gradient for stroke that doesn't work - think it needs a setGradient somewhere but nvm
             //
@@ -105,8 +106,8 @@ function LoveTrianglesFunction() {
 
         p5.draw = () => {
 
-            p5.background(5,18,27);
-
+            // p5.background(5,18,27);
+            p5.background(p5.bg);
             let branch = (len) => {
                 if (len > 1.5) {
                     p5.push();

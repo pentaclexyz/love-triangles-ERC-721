@@ -7,11 +7,15 @@ body {
   margin: 0;
   width: 100%;
   min-width: _breakpoint(step-min);
-  line-height: 1.5rem;
-  background-color: rgb(5,18,27);
-  //background-image: url(../../images/bg.gif);
+  background-color: _color(body-bg);
+  background-image: url(../../images/pentaBgDark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-canvas {
-  background-color: rgb(5,18,27);
+@media screen and (max-width: _breakpoint(step-one)) {
+  body {
+    //background-image: url(../../images/pentaBgDarkVert.jpg);
+    //background-size: 100% 100%;
+  }
 }
