@@ -8,6 +8,9 @@ function LoveTrianglesFunction() {
         let val = 0.50;
         let interval = 180;
         let inc = 0.75;
+        let c1 = p5.color(235,235,235,100);
+        let c2 = p5.color(235,235,235,50);
+        
 
         p5.setup = (canvasParentRef) => {
             p5.createCanvas(window.innerWidth, window.innerHeight).parent(
@@ -18,16 +21,13 @@ function LoveTrianglesFunction() {
 
             // this is the gradient for stroke that doesn't work - think it needs a setGradient somewhere but nvm
             //
-            // let c1 = p5.color(235,235,235,100);
-            // let c2 = p5.color(235,235,235,50);
-            //
-            // let c = p5.lerpColor(c1, c2, .5);
-            // p5.stroke(c);
+            let c = p5.lerpColor(c1, c2, .5);
+            p5.stroke(c);
 
             // p5.stroke(251, 192, 224, 100);
             // p5.stroke(59,39,120, 100);
             // p5.stroke(50,220,169, 100);
-            p5.stroke(114,53,77);
+            // p5.stroke(114,53,77);
             // p5.stroke(129,87,93);
             // p5.stroke(83,101,108, 100);
             // p5.stroke(208,64,79, 100);
@@ -106,8 +106,9 @@ function LoveTrianglesFunction() {
 
         p5.draw = () => {
 
-            // p5.background(5,18,27);
-            p5.background(p5.bg);
+            p5.background(5,18,27);
+            p5.setGradient(50, 90, 540, 80, c1, c2, p5.Y_AXIS);
+
             let branch = (len) => {
                 if (len > 1.5) {
                     p5.push();
