@@ -24,7 +24,7 @@ function LoveTrianglesFunction() {
             let c = p5.lerpColor(c1, c2, .5);
             p5.stroke(c);
 
-            // p5.stroke(251, 192, 224, 100);
+            p5.stroke(251, 192, 224, 100);
             // p5.stroke(59,39,120, 100);
             // p5.stroke(50,220,169, 100);
             // p5.stroke(114,53,77);
