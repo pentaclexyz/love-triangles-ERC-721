@@ -8,25 +8,17 @@ function LoveTrianglesFunction() {
         let val = 0.50;
         let interval = 180;
         let inc = 0.75;
-        let c1 = p5.color(235,235,235,100);
-        let c2 = p5.color(235,235,235,50);
-        
 
         p5.setup = (canvasParentRef) => {
             p5.createCanvas(window.innerWidth, window.innerHeight).parent(
                 canvasParentRef
             );
+            p5.noStroke();
             p5.angleMode(p5.DEGREES);
-            p5.bg = p5.loadImage('triangle-bg.png');
-
-            // this is the gradient for stroke that doesn't work - think it needs a setGradient somewhere but nvm
-            //
-            let c = p5.lerpColor(c1, c2, .5);
-            p5.stroke(c);
-
-            p5.stroke(251, 192, 224, 100);
+            // p5.background(0,3);
+            // p5.stroke(251, 192, 224, 100);
             // p5.stroke(59,39,120, 100);
-            // p5.stroke(50,220,169, 100);
+
             // p5.stroke(114,53,77);
             // p5.stroke(129,87,93);
             // p5.stroke(83,101,108, 100);
@@ -102,12 +94,21 @@ function LoveTrianglesFunction() {
             // stroke(138,175,205);
             // stroke(112,244,225);
             // stroke(123,171,183);
+            p5.stroke(50,220,169, 100);
         }
 
         p5.draw = () => {
 
-            p5.background(5,18,27);
-            p5.setGradient(50, 90, 540, 80, c1, c2, p5.Y_AXIS);
+            let c = p5.createCanvas(810, 810);
+            let ctx = c.drawingContext;
+            p5.push();
+            p5.translate(p5.width / 2, p5.height / 2);
+            let gradient = ctx.createRadialGradient(0, 0, 450, 450, 0, 0);
+            gradient.addColorStop(0, "rgb(247,237,230)");
+            gradient.addColorStop(1, "rgb(236,197,185)");
+            ctx.fillStyle = gradient;
+            p5.ellipse(0, 0, 2100, 2100);
+            p5.pop();
 
             let branch = (len) => {
                 if (len > 1.5) {
