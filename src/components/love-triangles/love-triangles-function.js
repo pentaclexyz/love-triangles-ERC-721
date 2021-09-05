@@ -12,8 +12,9 @@ function LoveTrianglesFunction() {
         p5.setup = () => {
             p5.angleMode(p5.DEGREES);
             // p5.background(0,3);
-            // p5.stroke(251, 192, 224, 100);
+            p5.stroke(251, 192, 224, 100);
             // p5.stroke(59,39,120, 100);
+            // p5.stroke(50,220,169, 100);
             // p5.stroke(114,53,77);
             // p5.stroke(129,87,93);
             // p5.stroke(83,101,108, 100);
@@ -64,7 +65,7 @@ function LoveTrianglesFunction() {
             // p5.stroke(56,42,50);
             // p5.stroke(37,47,36);
             // p5.stroke(55,50,28);
-            p5.stroke(81,49,39);
+            // p5.stroke(81,49,39);
             // p5.stroke(98,76,44);
             // p5.stroke(19,22,24);
             // p5.stroke(24,21,23);
@@ -89,7 +90,9 @@ function LoveTrianglesFunction() {
             // p5.stroke(138,175,205);
             // p5.stroke(112,244,225);
             // p5.stroke(123,171,183);
-            // p5.stroke(50,220,169, 100);
+            // p5.stroke(139,169,194);
+            // p5.stroke(14,26,70);
+            // p5.stroke(54,79,97);
         }
 
         p5.draw = () => {
