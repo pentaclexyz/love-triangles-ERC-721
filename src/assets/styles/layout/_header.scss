@@ -3,32 +3,25 @@ header {
   width: 100%;
   padding: .75rem 0;
 
-  .header-content {
-    text-align: center;
-    > div:nth-of-type(1) {
-      margin-bottom: .5rem;
-      margin-left: -1rem;
-      .logo {
-        max-width: 12rem;
+  &.header-content {
+    > a:nth-of-type(1) {
+      display: flex;
+      justify-content: center;
+
+      .pentacle-icon {
+        max-width: 3rem;
+        padding-bottom: .75rem;
       }
     }
 
-    > div:nth-of-type(2) {
-      color: _color(tertiary);
-      font-family: _font(family-default);
-      font-size: _font(size-medium);
-      letter-spacing: .035rem;
+    > a:nth-of-type(2) {
+      display: flex;
+      justify-content: center;
+
+      .logo {
+        max-width: 15rem;
+      }
     }
-  }
-
-  a {
-    font-size: .875rem;
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .icon {
-    max-width: 5rem;
   }
 }
 
@@ -37,19 +30,19 @@ header {
   header {
     padding: 1rem 0;
 
-    .logo {
-      max-width: 15rem;
-    }
-
-    .header-content {
-      > div:nth-of-type(1) {
-        text-align: left;
-        margin-bottom: 0;
-        margin-left: 0;
+    &.header-content {
+      > a:nth-of-type(1) {
+        justify-content: flex-start;
+        .pentacle-icon {
+          max-width: 4rem;
+        }
       }
-      > div:nth-of-type(2) {
-        text-align: right;
-        font-size: _font(size-default);
+
+      > a:nth-of-type(2) {
+        justify-content: flex-end;
+        .logo {
+          max-width: 20rem;
+        }
       }
     }
   }
@@ -65,13 +58,11 @@ header {
     .header-content {
       &.flex-small {
         > div:nth-of-type(1) {
-          text-align: center;
-          margin-bottom: 0;
-          margin-left: 0;
+
         }
 
         > div:nth-of-type(2) {
-          text-align: center;
+
         }
       }
     }
