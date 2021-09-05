@@ -9,16 +9,11 @@ function LoveTrianglesFunction() {
         let interval = 180;
         let inc = 0.75;
 
-        p5.setup = (canvasParentRef) => {
-            p5.createCanvas(window.innerWidth, window.innerHeight).parent(
-                canvasParentRef
-            );
-            p5.noStroke();
+        p5.setup = () => {
             p5.angleMode(p5.DEGREES);
             // p5.background(0,3);
             // p5.stroke(251, 192, 224, 100);
             // p5.stroke(59,39,120, 100);
-
             // p5.stroke(114,53,77);
             // p5.stroke(129,87,93);
             // p5.stroke(83,101,108, 100);
@@ -69,7 +64,7 @@ function LoveTrianglesFunction() {
             // p5.stroke(56,42,50);
             // p5.stroke(37,47,36);
             // p5.stroke(55,50,28);
-            // p5.stroke(81,49,39);
+            p5.stroke(81,49,39);
             // p5.stroke(98,76,44);
             // p5.stroke(19,22,24);
             // p5.stroke(24,21,23);
@@ -77,24 +72,24 @@ function LoveTrianglesFunction() {
             // p5.stroke(29,31,46);
             // p5.stroke(70,70,79);
             // p5.stroke(163,164,165);
-            // stroke(91,96,55);
-            // stroke(119,116,121,);
-            // stroke(152,186,184);
-            // stroke(205,209,172);
-            // stroke(50,62,76);
-            // stroke(145,143,170);
-            // stroke(246,209,95);
-            // stroke(160,177,170);
-            // stroke(208,78,76);
-            // stroke(228,160,125);
-            // stroke(122,173,174);
-            // stroke(115,98,107);
-            // stroke(111,97,59);
-            // stroke(189,165,64);
-            // stroke(138,175,205);
-            // stroke(112,244,225);
-            // stroke(123,171,183);
-            p5.stroke(50,220,169, 100);
+            // p5.stroke(91,96,55);
+            // p5.stroke(119,116,121,);
+            // p5.stroke(152,186,184);
+            // p5.stroke(205,209,172);
+            // p5.stroke(50,62,76);
+            // p5.stroke(145,143,170);
+            // p5.stroke(246,209,95);
+            // p5.stroke(160,177,170);
+            // p5.stroke(208,78,76);
+            // p5.stroke(228,160,125);
+            // p5.stroke(122,173,174);
+            // p5.stroke(115,98,107);
+            // p5.stroke(111,97,59);
+            // p5.stroke(189,165,64);
+            // p5.stroke(138,175,205);
+            // p5.stroke(112,244,225);
+            // p5.stroke(123,171,183);
+            // p5.stroke(50,220,169, 100);
         }
 
         p5.draw = () => {
@@ -133,6 +128,7 @@ function LoveTrianglesFunction() {
                 // p5.line(0, 0, 0, -len * 0.67);
             }
             angle += inc;
+
             p5.translate(p5.width / 2, p5.height / 2 + interval / 2);
             branch(interval);
             if (angle >= 120 || angle <= 24) {
