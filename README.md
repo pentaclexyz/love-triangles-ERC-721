@@ -25,6 +25,11 @@ a little seed planted in the mind via @blockgeekdima (yes, he's cool to see and 
 - and then further observed (somewhere else) 
 
 
+## hand coloured colours from laputa
+
+https://www.figma.com/file/JEStyscEilHNtC8Du3EHmC/Love-Triangles?node-id=0%3A1
+
+
 
 ## p5 thingies - this is obv super early days – but thought was fractal + something to give away to early friends – hopefully sounds from e when he's back <3
 
