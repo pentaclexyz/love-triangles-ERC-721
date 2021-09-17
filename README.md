@@ -15,6 +15,7 @@ $ yarn start
 
 https://user-images.githubusercontent.com/80323528/133710868-078b018d-d1a8-4d9b-a3a5-d17986d3b30c.mp4
 
+<img width="1042" alt="image" src="https://user-images.githubusercontent.com/80323528/133712833-2a394bb7-e229-4789-ac3a-929f7a085f3a.png">
 
 
 ## Love triangles story seed
