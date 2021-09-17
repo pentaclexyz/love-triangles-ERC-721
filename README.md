@@ -32,7 +32,7 @@ https://www.figma.com/file/JEStyscEilHNtC8Du3EHmC/Love-Triangles?node-id=0%3A1
 
 
 
-## p5 thingies - this is obv super early days – but thought was fractal + something to give away to early friends – hopefully sounds from e when he's back <3
+## p5 thingies - this is obv super early days – but thought was fractal + something to give away to early friends – sounds from e when he's back <3
 
 https://editor.p5js.org/pentacle/sketches/7Ofv2pSsb
 
@@ -61,7 +61,7 @@ https://en.wikipedia.org/wiki/Pythagoras
 https://en.wikipedia.org/wiki/Muses
 
 
-Hopefully la Ratte is into drawing the pentacle waifu muses
+la Ratte is into drawing the pentacle waifu muses
 
 
 
