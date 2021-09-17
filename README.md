@@ -8,12 +8,21 @@ $ yarn start
 
 
 
+## early design idea – but can be totally made way more weird
+
+
+[PENTACLE_LOVE_TRIANGLES_1(1).pdf](https://github.com/pentacledotai/love-triangles-ERC-721/files/7181998/PENTACLE_LOVE_TRIANGLES_1.1.pdf)
+
+https://user-images.githubusercontent.com/80323528/133710868-078b018d-d1a8-4d9b-a3a5-d17986d3b30c.mp4
+
+
+
 ## Love triangles story seed
 
 numbers – 3, 18, 27, 81
 
-a little seed planted in the mind via @blockgeekdima - and then further observed (yes, he's cool to provide more presence)
-
+a little seed planted in the mind via @blockgeekdima (yes, he's cool to see and give his ideas) 
+- and then further observed (somewhere else) 
 
 
 
@@ -44,6 +53,9 @@ https://en.wikipedia.org/wiki/Pythagoras
     Urania (astronomy)
 
 https://en.wikipedia.org/wiki/Muses
+
+
+Hopefully la Ratte is into drawing the pentacle waifu muses
 
 
 
