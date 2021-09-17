@@ -4,7 +4,6 @@ $ yarn install
 
 $ yarn start
 
-(haven't tested this yet as info all in npm)
 
 
 ## p5 thingies
