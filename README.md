@@ -41,7 +41,7 @@ https://editor.p5js.org/pentacle/sketches/cNdVFajMg
 https://editor.p5js.org/pentacle/sketches/KbzDLnonL
 
 
-## pythagorus
+## pythagoras
 
 https://en.wikipedia.org/wiki/Pythagoras
 
