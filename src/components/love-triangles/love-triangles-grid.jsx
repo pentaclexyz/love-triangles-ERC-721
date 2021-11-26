@@ -1,50 +1,65 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { MuuriComponent, getResponsiveStyle } from "muuri-react";
 import { useMediaQuery } from "react-responsive";
 
 export const ThemeContext = React.createContext(null);
-const ThemeProvider = ({ children }) => {
-    const IsMobileScreen = useMediaQuery({
-      query: "(max-width: 767px)"
-    });
-    const isBigScreen = useMediaQuery({
-      query: "(min-width: 824px)"
-    });
-    
-    // Memoize the style.
-    const style = useMemo(() => {
-      const columns = () => {
-          if (IsMobileScreen) {
-            return 1 / 2;
-          }
-          if (isBigScreen) {
-              return 1/4;
-          }
-          return 1/3;;
+const ThemeProvider = ({ children, size }) => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 767px)"
+  });
+
+  const isReallyBigScreen = useMediaQuery({
+    query: "(min-width: 1320px)"
+  });
+
+  const style = useMemo(() => {
+    const columns = () => {
+      if (isMobile) {
+        if (size === 'small') {
+          return 1 / 3;
+        }
+        return 1;
       }
-      return getResponsiveStyle({
-        columns:columns(),
-        margin: "1%",
-        ratio: 1
-      });
-    }, [isBigScreen, IsMobileScreen]);
-  
-    return (
-      <ThemeContext.Provider value={style}>{children}</ThemeContext.Provider>
-    );
-  };
+      if (size === 'small') {
+        return 1 / 9;
+      }
+      return 1 / 3;;
+    }
+    return getResponsiveStyle({
+      columns: columns(),
+      margin: "1%",
+      ratio: 1
+    });
+  }, [isReallyBigScreen, size, isMobile]);
+
+  return (
+    <ThemeContext.Provider value={style}>{children}</ThemeContext.Provider>
+  );
+};
 
 export default function LoveTrianglesGrid({ children }) {
+
+  const [size, setSize] = useState('small');
 
   useEffect(() => {
     // HACK: Without this the tiles render in one column initially
     window.dispatchEvent(new Event('resize'))
   })
-    return (
-      <ThemeProvider>
-        <MuuriComponent>
-            {children}
-        </MuuriComponent>
+  return (
+    <ThemeProvider size={size}>
+      <div style={{display: 'flex'}} className={'justify-end'}>
+        <div className="switch-button" content="large" >
+          <input className="switch-button-checkbox" type="checkbox" onChange={() => setSize(size === 'small' ? 'large' : 'small')}/>
+          <label className="switch-button-label">
+          <span className="switch-button-label-span">smol</span>
+          </label>
+        </div>
+      </div>
+
+      <br />
+      <MuuriComponent>
+        {children}
+      </MuuriComponent>
     </ThemeProvider>
-    )
+  )
 }
